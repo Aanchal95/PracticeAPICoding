@@ -1,0 +1,51 @@
+<testsuite failures="0" name="src/test/java/Features/PepPalmlogin.feature" skipped="0" tests="3" time="1.484754">
+  <testcase classname="src.test.java.Features.PepPalmlogin" name="To Login PepPalm" time="1.117256">
+    <system-out>* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+* def reqPayload = ........................................................ passed
+Given path '/user/google-login/' .......................................... passed
+And request reqPayload .................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.PepPalmlogin" name="To create Lead in PepPalm" time="0.131324">
+    <system-out>* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+* def reqPayload = ........................................................ passed
+Given path '/user/google-login/' .......................................... passed
+And request reqPayload .................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+* def leadPayload = ....................................................... passed
+Given path '/lead_manage/create/lead/' .................................... passed
+And request leadPayload ................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And header Authorization = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAyNDgwMzM1LCJpYXQiOjE3MDI0NTg3MzUsImp0aSI6IjA0MjJiNzk2NzJhNjRlMzQ4MGI0ZWQzZDJlZDg1M2M3IiwidXNlcl9pZCI6MTEzNiwiaWQiOjExMzYsInVzZXJuYW1lIjoiQWFuY2hhbCIsIm5hbWUiOiJBYW5jaGFsIiwiZW1haWwiOiJhYW5jaGFsLmtAcGVwcGVyZnJ5LmNvbSIsInR3b19mYV9zdGF0dXMiOjAsImZvcmNlX3Bhc3N3b3JkX2NoYW5nZSI6MCwidXNlcl90eXBlIjoiMiJ9.7plKfP0LCo8YYTJL8Y0ieOsLIbhU2y-vOVrvkUUNqZE' . passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.PepPalmlogin" name="Studio User mapping" time="0.236173">
+    <system-out>* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+* def reqPayload = ........................................................ passed
+Given path '/user/google-login/' .......................................... passed
+And request reqPayload .................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+* def leadPayload = ....................................................... passed
+Given path '/lead_manage/create/lead/' .................................... passed
+And request leadPayload ................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And header Authorization = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAyNDgwMzM1LCJpYXQiOjE3MDI0NTg3MzUsImp0aSI6IjA0MjJiNzk2NzJhNjRlMzQ4MGI0ZWQzZDJlZDg1M2M3IiwidXNlcl9pZCI6MTEzNiwiaWQiOjExMzYsInVzZXJuYW1lIjoiQWFuY2hhbCIsIm5hbWUiOiJBYW5jaGFsIiwiZW1haWwiOiJhYW5jaGFsLmtAcGVwcGVyZnJ5LmNvbSIsInR3b19mYV9zdGF0dXMiOjAsImZvcmNlX3Bhc3N3b3JkX2NoYW5nZSI6MCwidXNlcl90eXBlIjoiMiJ9.7plKfP0LCo8YYTJL8Y0ieOsLIbhU2y-vOVrvkUUNqZE' . passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url 'https://salescrm.apiwarp.trendsys.in' .............................. passed
+Given path '/static_data/studio-user-mapping' ............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And header Authorization = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAyNDcwNzU4LCJpYXQiOjE3MDI0NDkxNTgsImp0aSI6ImU1ZDIzNDYyYTc5ZDRiMTdiYmZmZTJmNmFjMDY5MjVkIiwidXNlcl9pZCI6MTEzNiwiaWQiOjExMzYsInVzZXJuYW1lIjoiQWFuY2hhbCIsIm5hbWUiOiJBYW5jaGFsIiwiZW1haWwiOiJhYW5jaGFsLmtAcGVwcGVyZnJ5LmNvbSIsInR3b19mYV9zdGF0dXMiOjAsImZvcmNlX3Bhc3N3b3JkX2NoYW5nZSI6MCwidXNlcl90eXBlIjoiMiJ9.f4OutORJNXNlTWg8NG-IAecQYkOoin3JNgLCgiPpeZQ' . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

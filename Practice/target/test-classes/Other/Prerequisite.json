@@ -1,0 +1,12 @@
+{
+
+    
+    "config": {
+        "PepPalm": "https://salescrm.apiwarp.trendsys.in",
+
+        "LoginAPI": "/user/google-login/"
+        },
+        "actualHeaders" : {
+        "Content-Type": "application/json"
+        }
+}

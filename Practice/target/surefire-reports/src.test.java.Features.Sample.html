@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.Features.Sample</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2023-12-13 10:40:43 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:3]">[1:3] pass the user request with headers_Part1 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:17]">[2:17] pass the user request with headers_Part2 </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:27]">[3:27] pass the user request with headers_Part3 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/Features/Sample.feature</span><span class="feature-description">GET API headers feature</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:3]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">pass the user request with headers_Part1 </span>
+</div>
+<div class="scenario-time passed">ms: 1894</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given header Content-Type = 'text/xml;charset=ISO-8859-1'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And header Accept-Encoding = 'gzip,deflate'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And header Connection = 'Keep-Alive'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And header Expect = '100-continue'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And header Authorization = 'Bearer 6a42fb8713759943e6e254349051bd2945e064e6e5f69bb72780fc13af7f91fc'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">When url baseUrl+'/public/v1/users'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And path '5828384'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">1866</div>
+</div>
+<div class="preformatted" data-parent="9">10:40:40.791 request:
+1 &gt; GET https://gorest.co.in/public/v1/users/5828384
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 6a42fb8713759943e6e254349051bd2945e064e6e5f69bb72780fc13af7f91fc
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: text/xml;charset=ISO-8859-1
+1 &gt; Expect: 100-continue
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
+
+10:40:41.628 response time in milliseconds: 831.10
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 834bb3bc59c787b7-SIN
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 13 Dec 2023 05:10:41 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kGJIADNmpJnDxsghFkoGCQw7vYbzzxpHC7Gp%2FTT16lVjs3%2BgmzR4LA0IRBcQTUZz0gUqckoU%2FJ15X7Gsm7C7i1d9%2F6ZZOWEQa7aqypCXeNElCPZUgJ4cSRFQ9PXpEOs%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; alt-svc: h3=":443"; ma=86400
+1 &lt; etag: W/"01b9a4741bddf08e3f554f2e9a677016"
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 89
+1 &lt; x-ratelimit-reset: 1
+1 &lt; x-request-id: c7799bb6-d67a-4bf1-8b6f-803609c82461
+1 &lt; x-runtime: 0.088991
+1 &lt; x-xss-protection: 0
+{"meta":null,"data":{"id":5828384,"name":"Nawal Patel DC","email":"nawal_patel_dc@considine.test","gender":"female","status":"inactive"}}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="11">10:40:41.637 [print] {
+  "data": {
+    "gender": "female",
+    "name": "Nawal Patel DC",
+    "id": 5828384,
+    "email": "nawal_patel_dc@considine.test",
+    "status": "inactive"
+  },
+  "meta": null
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:17]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:17]</span><span class="scenario-name">pass the user request with headers_Part2 </span>
+</div>
+<div class="scenario-time passed">ms: 627</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* def request_headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given headers request_headers</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When url baseUrl+'/public/v1/users'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And path '5828384'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">623</div>
+</div>
+<div class="preformatted" data-parent="16">10:40:41.660 request:
+1 &gt; GET https://gorest.co.in/public/v1/users/5828384
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: text/xml;charset=ISO-8859-1
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+
+10:40:42.279 response time in milliseconds: 617.15
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 834bb3c079c23f4e-SIN
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 13 Dec 2023 05:10:42 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NTllI%2Fai4ak7HVhYmnlSQBQ84cg2N%2B7RjaJehU%2B%2F38%2FR0yJr%2BRKwqyWAPzuYg%2FPEe%2Fa8U%2FqrgHs8hLVNVVScc7IUftjSQ5StmhHYeu55tgcQgPKIRzXW7nDnuWmZwCA%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; alt-svc: h3=":443"; ma=86400
+1 &lt; etag: W/"01b9a4741bddf08e3f554f2e9a677016"
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 0cc9823f-2329-468c-b896-644854f27a7b
+1 &lt; x-runtime: 0.032082
+1 &lt; x-xss-protection: 0
+{"meta":null,"data":{"id":5828384,"name":"Nawal Patel DC","email":"nawal_patel_dc@considine.test","gender":"female","status":"inactive"}}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="18">10:40:42.281 [print] {
+  "data": {
+    "gender": "female",
+    "name": "Nawal Patel DC",
+    "id": 5828384,
+    "email": "nawal_patel_dc@considine.test",
+    "status": "inactive"
+  },
+  "meta": null
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:27]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:27]</span><span class="scenario-name">pass the user request with headers_Part3 </span>
+</div>
+<div class="scenario-time passed">ms: 539</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">* configure headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When url baseUrl+'/public/v1/users'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">And path '5828384'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">536</div>
+</div>
+<div class="preformatted" data-parent="22">10:40:42.301 request:
+1 &gt; GET https://gorest.co.in/public/v1/users/5828384
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: text/xml;charset=ISO-8859-1
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+
+10:40:42.832 response time in milliseconds: 529.76
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 834bb3c3f9935cd7-SIN
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 13 Dec 2023 05:10:42 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=N%2FGQRFK8MUHRFoiiTExd924JvNQQa9noLwEXF6c7r0MdPqWsl%2F9%2FBs3Sn33Ow0WCQVcI8mcBZ9%2BewhSJZ9KaJt8c70CIiQpA2s0iNoyuIICNfkFlWbtK8mShwSZ8Hwg%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; alt-svc: h3=":443"; ma=86400
+1 &lt; etag: W/"01b9a4741bddf08e3f554f2e9a677016"
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: d7e4ccee-e847-4e86-8cfd-6b40942c0dd2
+1 &lt; x-runtime: 0.020785
+1 &lt; x-xss-protection: 0
+{"meta":null,"data":{"id":5828384,"name":"Nawal Patel DC","email":"nawal_patel_dc@considine.test","gender":"female","status":"inactive"}}</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="24">10:40:42.834 [print] {
+  "data": {
+    "gender": "female",
+    "name": "Nawal Patel DC",
+    "id": 5828384,
+    "email": "nawal_patel_dc@considine.test",
+    "status": "inactive"
+  },
+  "meta": null
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

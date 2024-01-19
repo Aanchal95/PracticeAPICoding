@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/Features/PepPalmLoginDemo.feature" skipped="0" tests="1" time="0.165194">
+  <testcase classname="src.test.java.Features.PepPalmLoginDemo" name="To Verify Login API" time="0.165194">
+    <system-out>* def fetchDataFromPrerequisite = read('../Other/Prerequisite.json') ...... passed
+* def baseUrl = fetchDataFromPrerequisite.config.PepPalm .................. passed
+* def loginApi = fetchDataFromPrerequisite.config.LoginAPI ................ passed
+* def actualHeaders = fetchDataFromPrerequisite.actualHeaders ............. passed
+* def getCsvData = read('../Other/testData.csv') .......................... passed
+* def mainUrl = baseUrl + loginApi ........................................ passed
+* print mainUrl ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
